@@ -1,1 +1,0 @@
-const {shop}=require("../repository/Model")
