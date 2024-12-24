@@ -1,0 +1,427 @@
+<%@page import="org.hibernate.internal.build.AllowSysOut"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+	<%
+	String ten=(String)request.getSession().getAttribute("ten");
+	String s = (String)request.getSession().getAttribute("duongdananh");
+	if (s == null) {
+    s = "#"; // Hoặc gán giá trị mặc định khác nếu cần
+}
+%>
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 767px) {
+            #t-i-p {
+                width: 0px;
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .text-log {
+                width: 0px;
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 834px) {
+            #navbar span {
+                display: none;
+            }
+
+            #navbar i {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        #main div.classs {
+            flex: 0 0 24%;
+            height: 300px;
+            margin-left: 5px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border: 1px solid #FF5733;
+            overflow: hidden;
+            margin-bottom: 4%;
+        }
+
+        #navbar i {
+            font-size: 26px;
+            color: #FF5733
+        }
+
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: flex-start;
+        }
+
+        @media only screen and (max-width: 1177px) {
+            #main div.classs {
+                flex: 0 0 30%;
+            }
+
+            #main {
+                margin-left: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 920px) {
+            #main div.classs {
+                flex: 0 0 45%;
+            }
+
+            #main {
+                margin-left: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 520px) {
+            #main div.classs {
+                flex: 0 0 70%;
+            }
+
+            #main {
+                margin-left: auto;
+                justify-content: center;
+            }
+
+            #navbar i {
+                width: 5px;
+                display: inline-block;
+                margin: 0 auto;
+            }
+        }
+
+
+        #image_profile {
+            border-radius: 50%;
+        }
+        #image_profile img{
+            border-radius: 50%;
+        }
+
+        #r1-c1 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #footer {
+            margin-top: 20px;
+        }
+
+        #footer hr {
+            box-shadow: inset;
+        }
+
+        #r1-r3 {
+            display: flex;
+            align-items: center;
+        }
+
+        #r1-c1-d1 {
+            display: flex;
+            position: absolute;
+            right: 40px;
+            align-items: center;
+        }
+
+        #r1-c2-i1 {
+            width: 70%;
+            border: none;
+            border-bottom: 2px solid #cccccc;
+            padding-left: 10px;
+            border-radius: 10px;
+            margin-left: 3px;
+        }
+
+        #r1-c2-i1:hover {
+            border-color: #FF5733;
+        }
+
+        #r1-c2-i1:focus {
+            border-color: #FF5733;
+            outline: none;
+            color: #FF5733;
+        }
+
+        #logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        #image_profile {
+            border: 2px solid #FF5733;
+            background-color: aliceblue;
+            margin-left: 5px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .text-log:hover {
+            color: #FF5733;
+        }
+
+        #hr1 {
+            color: #FF5733;
+        }
+
+        #navbar {
+            border-right: 1px solid #FF5733;
+            border-left: 1px solid #FF5733;
+            border-radius: 10px;
+        }
+
+        .r-n {
+            margin-top: 20px;
+
+        }
+
+        #navbar span:hover {
+            display: inline-block;
+            color: #FF5733;
+            cursor: pointer;
+        }
+
+        #navbar span {
+            margin-left: 8px
+        }
+        .classs div:nth-of-type(2){
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            height: 42%;
+            background-color: #FF5733;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+        }
+
+        .classs div:nth-of-type(2) span {
+            color: azure;
+            display: block;
+            margin-left: 3%;
+            margin-top: 0%;
+        } 
+
+        .anh {
+            width: 100%;
+            height: 58%;
+        }
+
+        .khung {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-right: 1px solid azure;
+            border-left: 1px solid azure;
+        }
+        
+
+        .userm {
+            background-color: azure;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 3%;
+            margin-right: 1%;
+        }
+        .classs div:first-child img {
+            height: 100%;
+            width: 100%;
+}
+    </style>
+</head>
+
+<body onload="taikhoahoc()">
+    <div class="container-fluid">
+        <div class="row" id="footer">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-2">
+                <img id="logo" src="http://localhost:8080/CT252/Frontedn/ASSET/imagepublic/logomain.png" alt="">
+                <span class="text-log" style="color: #FF5733;">TeachWise Việt Nam</span>
+            </div>
+            <div id="r1-r3" class="col-lg-5 col-md-5 col-sm-5 col-8">
+                <i class="fa fa-search" style="font-size:26px;color:#FF5733"></i>
+                <input autocomplete="off" id="r1-c2-i1" type="text" placeholder="Tìm kiếm khóa học,...">
+            </div>
+            <div id="r1-c1" class="col-lg-4 col-md-3 col-sm-3 col-2">
+                <div id="r1-c1-d1">
+                    <i class="fa fa-bell"
+                        style="font-size:26px;color:#FF5733;display: inline-block; margin-right: 5px;"></i>
+                    <span id="t-i-p" class="text-log"><%=ten %></span>
+                    <div id="image_profile">
+                    <img id="ia" alt="" src="<%=s %>" style="width: 100%;height: 100%">
+                   </div>
+                </div>
+            </div>
+            <hr id="hr1">
+        </div>
+        <div class="row">
+            <div id="navbar" class="col-lg_1 col-md-2 col-sm-2 col-2">
+                <div class="r-n">
+                    <i class="fa fa-home"></i>
+                    <span onclick="khoiphuchome()">Trang Chủ</span>
+                </div>
+			
+                <div class="r-n">
+                    <i class="fa fa-book"></i>
+                    <span onclick="khoahocuatoi()">Quản Lý Khóa Học</span >
+                </div>
+                <div class="r-n">
+                    <i class="fa fa-user"></i>
+                    <span class="">Trang Cá Nhân</span>
+                </div>
+                
+                <div class="r-n">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span class="">Thống kê Doanh thu</span>
+                </div>
+                <div class="r-n">
+                    <i class="fa fa-wechat"></i>
+                    <span class="">teachwise chat</span>
+                </div>
+                <div class="r-n">
+                    <i class="fa fa-calendar"></i>
+                    <span>teachwise workspace</span>
+                </div>
+
+                <div class="r-n">
+                    <i class="fa fa-sign-in"></i>
+                    <span class="">Đăng Xuất</span>
+                </div>
+            </div>
+            <div class="col-lg_11  col-md-10 col-sm-10 col-10">
+                <div style="width: 100%;" id="main" >
+                    <div class="flex w-full flex-col items-center p-6 bg-gray-50">
+                        
+                        <div class="w-full max-w-md p-8 bg-white shadow-md rounded-lg">
+                            <div class="flex flex-col items-center mb-6">
+                                <img src="https://via.placeholder.com/100" alt="Profile Picture" class="w-24 h-24 rounded-full object-cover mb-4">
+                                <input type="file" hidden id="image"  />
+                                <div  class="flex space-x-4">
+                                    <button onclick="document.getElementById('image').click()" class="px-4 py-2 bg-indigo-800 text-white rounded hover:bg-indigo-700">Đổi ảnh đại diện</button>
+                                    <button class="px-4 py-2 bg-gray-100 text-gray-800 rounded hover:bg-gray-200">Delete picture</button>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4 w-full">
+                                <div class="flex space-x-4">
+                                    <div class="w-1/2">
+                                        <label class="block text-sm text-gray-600 mb-1">Họ</label>
+                                        <input oninput="update(this,'ND_HO')" id="ho" type="text" placeholder="Nguyễn" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-200">
+                                    </div>
+                                    <div class="w-1/2">
+                                        <label class="block text-sm text-gray-600 mb-1">Tên</label>
+                                        <input oninput="update(this,'ND_TEN')" id="name" type="text" placeholder="Ferguson" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-200">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm text-gray-600 mb-1">Mật khẩu</label>
+                                    <input oninput="update(this,'ND_MATKHAU')" id="pass" type="password" placeholder="your.email@mail.com" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-200">
+                                </div>
+                                
+                                
+                                <div>
+                                    <label class="block text-sm text-gray-600 mb-1">Giới thiệu</label>
+                                    <textarea oninput="update(this,'nd_ghichu')" id="gioithieu" placeholder="Write your bio here..." class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-200 h-24"></textarea>
+                                </div>
+                                
+                                <button type="button" onclick="submit()" class="w-full px-4 py-2 mt-4 bg-purple-600 text-white rounded hover:bg-purple-700">Save</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    var user={
+        ND_HO:"Nguyễn ",
+        ND_Ten:"Trọng Nam",
+        nd_ghichu:"Ko có gì đâu bạn",
+        ND_MATKHAU:"1525242424"
+    }
+
+
+    function render(){
+        document.getElementById("ho").value=user.ND_HO;
+        document.getElementById("name").value=user.ND_Ten;
+        document.getElementById("gioithieu").value=user.nd_ghichu;
+        document.getElementById("pass").value=user.ND_MATKHAU
+    }
+
+    
+    
+    
+
+
+
+    function  update(e,filName){
+
+        user[filName]=e.value;
+    }
+
+
+    function submit(){
+        let a=new FormData();
+        const fileInput = document.getElementById('image');
+        const file = fileInput.files[0];
+        a.append("file",file)
+        a.append("user",user)
+        alert("Hello woed")
+        fetch('https://your-server-endpoint.com/upload', {
+            method: 'POST',
+            body: a
+        })
+    }
+
+    render()
+
+
+gsap.from(".r-n", {
+    y: 50,
+    stagger: 0.2,
+    opacity: 0
+})
+gsap.from("#hr1", {
+        width: "0px",
+        duration: 2
+    })
+    gsap.to("#ia", {
+            duration: 1,
+            clipPath: 'circle(75% at 50% 50%)',
+            ease: 'power1.out'
+        });
+
+gsap.to("#logo", {
+    duration: 1,
+    clipPath: 'circle(75% at 50% 50%)',
+    ease: 'power1.out'
+});
+
+</script>
+
+
+</html>

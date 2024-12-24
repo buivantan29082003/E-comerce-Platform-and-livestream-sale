@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Overlay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tạo tỷ lệ 16:9 cho iframe */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="relative bg-black flex flex-col md:flex-row w-full h-screen">
+
+        <!-- Div lớn (bên trái) -->
+        <div class="bg-blue-500 w-full md:w-8/12 p-4 flex flex-col h-full">
+            <h1 class="absolute top-4 left-4 text-white text-2xl">H - Nguyễn Tuấn Anh</h1>
+            <p class="absolute top-16 left-4 text-white">Hôm nay sale lớn bán hàng.</p>
+            
+            <!-- Khung video responsive -->
+            <div class="iframe-container mt-8">
+                <iframe src="https://www.youtube.com/embed/Rlg5_jBMxNk" title="Javascript căn bản" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Div thứ hai (bên phải) -->
+        <div class="bg-white w-full md:w-4/12 p-4 md:relative flex flex-col h-full">
+            <!-- Input để nhập bình luận -->
+            <div class="p-2 bg-gray-100 border-t">
+                <input type="text" placeholder="Hãy nói gì đó hay ho" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            
+
+                <!-- Các bình luận -->
+                <div class="flex bg-black-500 flex-col-reverse space-y-2 space-y-reverse p-2">
+                    <p class="text-gray-900 font-semibold">tanbui600 đã tham gia</p>
+                    <p class="text-gray-900 font-semibold">Thắng Nguyễn đã tham gia</p>
+                    <p class="text-gray-600">Chào mừng bạn đến với TikTok LIVE! ❤️ Chúc bạn vui vẻ khi tương tác với mọi người trong thời gian thực...</p>
+                    <p class="text-gray-900 font-semibold">Quang chí: Hay quá em</p>
+                    <p class="text-gray-900 font-semibold">Minh Bùi62085: vh 123 chạy</p>
+                    <p class="text-gray-900 font-semibold">Hay nhó</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
