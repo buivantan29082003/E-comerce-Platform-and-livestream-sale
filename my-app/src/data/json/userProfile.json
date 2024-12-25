@@ -1,0 +1,13 @@
+{
+  "username": "NamJava",
+  "fullName": "Nguyễn Hoàng Nam",
+  "email": "ho*********vai6@gmail.com",
+  "phone": "**********46",
+  "gender": "Nam",
+  "birthday": {
+    "day": 15,
+    "month": 9,
+    "year": 2024
+  },
+  "avatar": "/assets/client/images/avatar2.png"
+}

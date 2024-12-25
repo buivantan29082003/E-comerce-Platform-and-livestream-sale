@@ -1,0 +1,55 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "image": "/assets/client/images/Produc-Hutao.png",
+      "title": "Nhắc nhở: Bạn đã nhận được hàng chưa?",
+      "content": "Nếu bạn chưa nhận được hàng hoặc gặp vấn đề với đơn hàng 240908DGKAQPHC, hãy nhấn Trả hàng/Hoàn tiền trước ngày 15-09-2024. Sau thời gian này, Shopee sẽ thanh toán cho Người bán.",
+      "time": "07:19 15-09-2024",
+      "read": false,
+      "details": [
+        {
+          "title": "Giao kiện hàng thành công",
+          "content": "Kiện hàng SPXVN040870579729 của đơn hàng 240908DGKAQPHC đã giao hàng thành công đến bạn.",
+          "time": "10:51 12-09-2024"
+        },
+        {
+          "title": "Xác nhận đã nhận hàng",
+          "content": "Vui lòng chỉ nhấn ‘Đã nhận được hàng’ khi đơn hàng 240908DGKAQPHC đã được giao đến bạn và sản phẩm không có vấn đề nào.",
+          "action": "Đánh giá ngay",
+          "time": "10:51 12-09-2024"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/assets/client/images/H2R-Product.png",
+      "title": "Đơn hàng đã hoàn tất",
+      "content": "Đơn hàng 240908D82QFADD đã hoàn thành. Bạn hãy đánh giá sản phẩm trước ngày 14-10-2024 giúp người dùng khác hiểu hơn về sản phẩm nhé!",
+      "time": "07:19 14-09-2024",
+      "read": true,
+      "details": [
+        {
+          "title": "Giao kiện hàng thành công",
+          "content": "Kiện hàng SPXVN040870579729 của đơn hàng 240908DGKAQPHC đã giao hàng thành công đến bạn.",
+          "time": "10:51 12-09-2024"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "/assets/client/images/Produc-Hutao.png",
+      "title": "Nhắc nhở: Bạn đã nhận được hàng chưa?",
+      "content": "Đơn hàng 240908D82QFADD đã hoàn thành. Bạn hãy đánh giá sản phẩm trước ngày 14-10-2024 giúp người dùng khác hiểu hơn về sản phẩm nhé!",
+      "time": "07:19 14-09-2024",
+      "read": false,
+      "details": [
+        {
+          "title": "Giao kiện hàng thành công",
+          "content": "Kiện hàng SPXVN040870579729 của đơn hàng 240908DGKAQPHC đã giao hàng thành công đến bạn.",
+          "time": "10:51 12-09-2024"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyễn Hoàng Nam",
+    "phone": "(+84) 706 851 246",
+    "addressLine1": "Đi thẳng về trung tâm Bắc Cực",
+    "addressLine2": "Xã Nhân Từ, huyện Vị Tha, Tỉnh Liêm Khiết",
+    "isDefault": true
+  },
+  {
+    "id": 2,
+    "name": "Trần Văn A",
+    "phone": "(+84) 123 456 789",
+    "addressLine1": "Gần trường Đại học Bách Khoa",
+    "addressLine2": "Phường 1, Quận 10, TP. Hồ Chí Minh",
+    "isDefault": false
+  }
+]

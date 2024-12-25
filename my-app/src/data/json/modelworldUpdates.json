@@ -1,0 +1,20 @@
+{
+  "updates": [
+    {
+      "id": 1,
+      "title": "Cho ModelWorld biết Sinh Nhật của bạn nhé",
+      "content": "💁‍♀️ nampink0 ơi! Nhớ điền Ngày Sinh chính xác để có cơ hội nhận nhiều ưu đãi hơn nha! 🤳 Chia sẻ ngay TẠI ĐÂY!",
+      "time": "07:19 15-09-2024",
+      "image": "/assets/client/images/Sale/nof-modelworld.png",
+      "read": false
+    },
+    {
+      "id": 2,
+      "title": "Cảnh báo vi phạm bình luận bằng hình ảnh nhạy cảm",
+      "content": "Tài khoản ModelWorld của bạn vừa được báo cáo có hành vi bình luận bằng hình ảnh nhạy cảm Tại sản phẩm Mô Hình MClaren",
+      "time": "07:19 14-09-2024",
+      "image": "/assets/client/images/Sale/nof-Warning.png",
+      "read": true
+    }
+  ]
+}

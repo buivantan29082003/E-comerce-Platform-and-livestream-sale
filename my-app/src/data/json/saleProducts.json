@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Mô hình Roronoa Zoro...",
+    "price": "475,000đ",
+    "oldPrice": "528,000đ",
+    "discount": "-10%",
+    "image": "/assets/client/images/Produc-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Mô hình Monkey D. Luffy...",
+    "price": "650,000đ",
+    "oldPrice": "720,000đ",
+    "discount": "-12%",
+    "image": "/assets/client/images/Produc-1.png"
+  },
+  {
+    "id": 3,
+    "name": "Mô hình Nami...",
+    "price": "580,000đ",
+    "oldPrice": "630,000đ",
+    "discount": "-8%",
+    "image": "/assets/client/images/Produc-1.png"
+  }
+]

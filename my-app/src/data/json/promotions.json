@@ -1,0 +1,20 @@
+{
+  "promotions": [
+    {
+      "id": 1,
+      "title": "ĐỔI NGAY MÃ FREESHIP 50K BẠN ƠI!",
+      "content": "👛Giá ưu đãi chỉ 2.000đ ✨Thứ hạng càng cao - Đặc quyền càng nhiều 💖Số lượng có hạn - Tranh thủ đổi ngay!",
+      "time": "07:19 15-09-2024",
+      "image": "/assets/client/images/Sale/Sale1.png",
+      "read": false
+    },
+    {
+      "id": 2,
+      "title": "NẠP ĐẦY MÃ GIẢM SALE KHUNG GIỜ CUỐI",
+      "content": "✨Mã giảm 500K, 200K đã sẵn sàng 🧡Video thêm mã giảm đến 50% 🚀Mua nhanh nha",
+      "time": "07:19 14-09-2024",
+      "image": "/assets/client/images/Sale/Sale2.png",
+      "read": true
+    }
+  ]
+}

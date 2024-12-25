@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Alime",
+    "image": "/assets/client/images/Cate-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Mavel",
+    "image": "/assets/client/images/image-1.png"
+  },
+  {
+    "id": 3,
+    "name": "Car",
+    "image": "/assets/client/images/image-2.png"
+  },
+  {
+    "id": 4,
+    "name": "Plane",
+    "image": "/assets/client/images/image-3.png"
+  },
+  {
+    "id": 5,
+    "name": "Game",
+    "image": "/assets/client/images/image-4.png"
+  }
+]

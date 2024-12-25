@@ -1,0 +1,92 @@
+[
+  {
+    "shop": "Shop 1",
+    "links": {
+      "chat": "https://example.com/chat1",
+      "view_shop": "https://example.com/shop1",
+      "return_policy": "Chính sách trả hàng"
+    },
+    "status": "Đang chờ thanh toán",
+    "status_user": "Chưa thanh toán",
+    "product": {
+      "image": "/assets/client/images/Produc-Hutao.png",
+      "name": "Sản phẩm 1",
+      "category": "Phân loại 1",
+      "quantity": 2,
+      "original_price": "100.000đ",
+      "discounted_price": "90.000đ"
+    }
+  },
+  {
+    "shop": "Shop 2",
+    "links": {
+      "chat": "https://example.com/chat2",
+      "view_shop": "https://example.com/shop2",
+      "return_policy": "Chính sách trả hàng"
+    },
+    "status": "Đang vận chuyển",
+    "status_user": "Đang giao hàng",
+    "product": {
+      "image": "/assets/client/images/product2.jpg",
+      "name": "Sản phẩm 2",
+      "category": "Phân loại 2",
+      "quantity": 1,
+      "original_price": "200.000đ",
+      "discounted_price": "180.000đ"
+    }
+  },
+  {
+    "shop": "Shop 3",
+    "links": {
+      "chat": "https://example.com/chat3",
+      "view_shop": "https://example.com/shop3",
+      "return_policy": "Chính sách trả hàng"
+    },
+    "status": "Hoàn thành",
+    "status_user": "Đã giao hàng",
+    "product": {
+      "image": "/assets/client/images/product3.jpg",
+      "name": "Sản phẩm 3",
+      "category": "Phân loại 3",
+      "quantity": 3,
+      "original_price": "150.000đ",
+      "discounted_price": "120.000đ"
+    }
+  },
+  {
+    "shop": "Shop 4",
+    "links": {
+      "chat": "https://example.com/chat4",
+      "view_shop": "https://example.com/shop4",
+      "return_policy": "Chính sách trả hàng"
+    },
+    "status": "Đã hủy",
+    "status_user": "Đã hủy đơn",
+    "product": {
+      "image": "/assets/client/images/product4.jpg",
+      "name": "Sản phẩm 4",
+      "category": "Phân loại 4",
+      "quantity": 1,
+      "original_price": "300.000đ",
+      "discounted_price": "300.000đ"
+    }
+  },
+  {
+    "shop": "Shop 5",
+    "links": {
+      "chat": "https://example.com/chat5",
+      "view_shop": "https://example.com/shop5",
+      "return_policy": "Chính sách trả hàng"
+    },
+    "status": "Chờ giao hàng",
+    "status_user": "Đang chờ giao hàng",
+    "product": {
+      "image": "/assets/client/images/product5.jpg",
+      "name": "Sản phẩm 5",
+      "category": "Phân loại 5",
+      "quantity": 2,
+      "original_price": "250.000đ",
+      "discounted_price": "230.000đ"
+    }
+  }
+]

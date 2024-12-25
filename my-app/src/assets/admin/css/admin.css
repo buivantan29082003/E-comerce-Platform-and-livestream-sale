@@ -1,0 +1,35 @@
+/* Voucher */
+.create-voucher-now .container h1 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.create-voucher-now .container a {
+  font-size: 25px;
+  line-height: 30px;
+  padding: 10px 30px 10px 30px;
+}
+.create-voucher-now .container p {
+  padding-top: 20px;
+}
+.create-voucher-now .container span {
+  color: #838bed;
+}
+
+/* CSS để ẩn các phần tử tab mặc định */
+.hidden {
+  display: none;
+}
+
+/* CSS cho tab đang chọn */
+.tab-button.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+.btn-color-admin {
+  background-color: #838bed;
+  color: white;
+}
+
+/* End Voucher */
