@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let a = [
+            {
+                name: "1",
+                list: [
+                {
+                    name: "4s",
+                    list: [
+                        {
+                            name: "3as",
+                            list: []
+                        }
+                    ]
+                },
+                    {
+                        name: "4",
+                        list: [
+                            {
+                                name: "3wa",
+                                list: [{
+                                    name: "4",
+                                    list: [
+                                        {
+                                            name: "3a",
+                                            list: []
+                                        }
+                                    ]
+                                }]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "2",
+                list: [
+                    {
+                        name: "Nguyen Van b",
+                        list: []
+                    }
+                ]
+            }
+        ];
+    let p=[];
+    function getId(id){
+        p.push(id.name)
+        if(id.list.length>0){
+            id.list.forEach(v=>{
+                getId(v)
+            })
+        }else{
+            return 
+        }
+    }
+
+    getId(a[0])
+    console.log(p)
+    
+
+</script>
+</html>

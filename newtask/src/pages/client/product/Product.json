@@ -1,0 +1,91 @@
+[
+    {
+      "id": 1,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mô hình Roronoa Zoro...",
+      "price": "475,000đ",
+      "oldPrice": "528,000đ",
+      "discount": "-10%",
+      "sold": "7,2k",
+      "rating": 80,
+      "image": "/assets/client/images/Produc-1.png",
+      "hoverImage": "/assets/client/images/products/white-1.jpg"
+    }
+  ]
+  

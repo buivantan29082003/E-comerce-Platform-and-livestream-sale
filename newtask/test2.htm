@@ -1,0 +1,36 @@
+<div className="accordion-item hover:bg-gray-50 text-black rounded-md transition ease-in-out duration-150 hover:bg-indigo-50 hover:scale-105 transform">
+  <button className="w-full flex justify-between items-center p-3" onClick={() => toggleAccordion(6)}>
+      <div className="flex items-center">
+          <AiOutlineProduct color="blue" className="mr-2" />
+          {isOpen && <span className="text-sm font-semibold text-black-600">Shop của bạn</span>}
+      </div>
+      {isOpen && (
+          <svg
+              color="gray"
+              className={`w-5 h-5 transition-transform duration-300 ${expandedItem === 2 ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          </svg>
+      )}
+  </button>
+  <div
+      className={`mt-2 overflow-hidden transition-max-height duration-500 ${
+          expandedItem === 6 ? 'max-h-40' : 'max-h-0'
+      }`}
+  >
+      {isOpen && (
+          <>
+              <Link to={'/seller/shopinfo'} style={{ textDecoration: 'none' }}>
+                  <span className="block px-4 py-2 text-xs">Cập nhật shop</span>
+              </Link>
+              <Link to={'/seller/updateadress'} style={{ textDecoration: 'none' }}>
+                  <span className="block px-4 py-2 text-xs">Cập nhật địa chỉ shop</span>
+              </Link>
+          </>
+      )}
+  </div>
+</div>

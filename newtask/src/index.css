@@ -1,0 +1,543 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1176px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 990px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+body {
+    background-color: #f5f5f5 !important;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    height: 39px;
+    font-size: 32px;
+    color: #625db9;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 2px #625db9; /* Viền ngoài dày 2px màu đen */
+    text-stroke: 2px #625db9; /* Để đảm bảo trên các trình duyệt hỗ trợ */
+}
+
+.search-container {
+    width: 850px; /* Độ dài tổng của thanh tìm kiếm */
+}
+
+.find {
+    height: 39px; /* Độ cao của input tìm kiếm */
+    width: calc(100% - 60px); /* Trừ đi kích thước của button để cân đối */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 0.4rem 0 0 0.4rem; /* Bo tròn góc trái */
+    background-color: #f0f0f0; /* Màu nền nhạt */
+    padding-left: 10px; /* Tạo khoảng cách giữa chữ và viền trái */
+}
+
+.search-button {
+    position: absolute; /* Đặt button nằm đè lên input */
+    right: 0; /* Căn phải */
+    top: 0; /* Căn trên */
+    height: 39px; /* Giữ nguyên chiều cao */
+    width: 60px; /* Chiều rộng của button */
+    background-color: #6b46c1; /* Màu sắc của button */
+    color: white;
+    border-radius: 0 0.4rem 0.4rem 0; /* Bo tròn góc phải */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon {
+    margin-left: 38px;
+}
+
+.cart img {
+    height: 39px;
+    width: 50px;
+}
+
+/* ------------Content------------ */
+.banner-home {
+    padding: 17px 0 0 0;
+}
+
+.cot-trai img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 322px;
+}
+
+.cot-phai img {
+    width: 100%;
+    max-height: 157px;
+}
+
+.sec-banner {
+    padding: 38px 0 0 0;
+}
+
+.subBanner {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.subBanner .subBanner-item {
+    padding: 27.5px 21.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subBanner-item .col-span-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.subBanner-item-top {
+    display: flex;
+}
+
+.subBanner-item-top h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+.subBanner-item-bottom p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sub-cate {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.list-category {
+    padding-top: 38px;
+}
+
+.category-carousel {
+    background-color: white;
+    padding: 10px 0 0 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.category-left p {
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    color: #828282;
+}
+
+.heading {
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+}
+
+.heading h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #828282;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    bottom: 0;
+    width: 98%;
+    height: 2px;
+    background-color: #00000024;
+}
+
+.list-sale {
+    padding-top: 38px;
+}
+
+.sub-sale {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.list-sale__text {
+    display: flex;
+    justify-content: space-between;
+}
+.list-sale__text .start {
+    display: flex;
+    gap: 40px;
+}
+.flash-sale-text {
+    color: grey;
+}
+
+.list-sale__text .on-sale-text {
+    color: #625db9;
+    font-weight: bold;
+}
+
+.ending-in-text {
+    color: grey;
+}
+
+.list-sale__text .end {
+    color: #625db9;
+    border: 1px solid #625db988;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.countdown-time {
+    background-color: #e50000;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sale-carousel {
+    padding: 30px 15px;
+    background-color: white;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+}
+
+.card-item img {
+    border-radius: 5px 0;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-content P {
+    font-size: 20px;
+    line-height: 30px;
+}
+.product-content span {
+    font-size: 20px;
+    line-height: 30px;
+    color: #625db9;
+}
+
+.product-content label {
+    display: flex;
+}
+
+.product-content label p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.product-content label p:first-child {
+    text-decoration: line-through;
+    color: #878787;
+}
+
+.product-content label p:last-child {
+    /* Các style cho phần tử cuối cùng */
+    /* Ví dụ: color: red; */
+}
+.heading-product {
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+}
+
+.heading-product h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #828282;
+}
+
+.heading-product::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    bottom: 0;
+    width: 98%;
+    height: 2px;
+    background-color: #625db9c0;
+}
+.home-product {
+    padding-top: 30px;
+}
+
+.sub-product {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.product {
+    padding: 30px 15px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép dòng sản phẩm tiếp tục xuống hàng nếu cần */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các sản phẩm */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+}
+
+.product {
+    padding: 30px 15px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép dòng sản phẩm tiếp tục xuống hàng nếu cần */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các sản phẩm */
+}
+
+.card-product {
+    width: calc(100% / 6 - 10px); /* Chia đều chiều rộng mỗi sản phẩm cho 6 cột, trừ khoảng cách */
+    margin: 0 5px 15px; /* Tạo khoảng cách ngang và dưới giữa các sản phẩm */
+    border: 1px solid #828282;
+    border-radius: 5px;
+    padding: 4px;
+    width: 95%;
+}
+
+.card-product img {
+    border-radius: 5px 5px 0 0;
+}
+
+.product .footer-card-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product .footer-card-product span {
+    font-size: 12px;
+}
+
+.product .footer-card-product p {
+    font-size: 12px;
+}
+
+.footer-card-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-outer {
+    position: relative;
+    font-size: 20px; /* Kích thước ngôi sao */
+    color: #ccc; /* Màu của ngôi sao chưa lấp đầy */
+}
+
+.star-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    color: #ffc107; /* Màu của ngôi sao được lấp đầy */
+    width: 80%;
+}
+
+.star-outer::before {
+    content: '★★★★★'; /* Hiển thị 5 ngôi sao */
+}
+
+.star-inner::before {
+    content: '★★★★★'; /* Lấp đầy các ngôi sao dựa trên rating */
+}
+
+.home-product .product-buttom {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.product-buttom .buttom {
+    border: 1px solid #625db9;
+    font-size: 18px;
+    color: #625db9;
+    padding: 20px 250px;
+    border-radius: 5px;
+}
+footer {
+    background-color: white;
+    border-top: 3px solid #625db9;
+    margin-top: 100px;
+}
+footer .container {
+    background-color: white;
+}
+.banner-footer {
+    display: flex; /* Xếp các ảnh thành hàng ngang */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các ảnh */
+    align-items: center; /* Căn chỉnh ảnh theo chiều dọc */
+    padding: 20px 40px;
+}
+
+.banner-footer img {
+    width: 30%; /* Đặt chiều rộng của mỗi ảnh là 30% để 3 ảnh vừa 1 dòng */
+    height: auto; /* Giữ tỉ lệ ảnh */
+    object-fit: contain; /* Đảm bảo ảnh không bị cắt hoặc tràn ra ngoài */
+    margin: 0 5px; /* Tạo khoảng cách nhỏ giữa các ảnh */
+}
+
+.content-footer {
+    display: flex; /* Sử dụng Flexbox để xếp các cột theo hàng ngang */
+    flex-wrap: wrap; /* Đảm bảo nội dung xuống hàng nếu không đủ chỗ */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các cột */
+    padding: 20px; /* Thêm padding vào phần footer để tạo không gian */
+    box-sizing: border-box; /* Đảm bảo padding được tính vào kích thước phần tử */
+    overflow: hidden; /* Đảm bảo nội dung không vượt ra ngoài container */
+}
+
+.content-footer .col {
+    width: 22%; /* Đặt chiều rộng của mỗi cột để vừa đủ 4 cột trong một hàng */
+    margin-bottom: 20px; /* Tạo khoảng cách dưới giữa các cột */
+}
+
+.content-footer .col a,
+.content-footer .col p,
+.content-footer .col span {
+    display: block; /* Đảm bảo mỗi phần tử trong cột nằm riêng hàng */
+    color: #333; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân ở thẻ <a> */
+    margin: 5px 0; /* Khoảng cách giữa các phần tử */
+}
+
+.content-footer .col a:hover {
+    text-decoration: underline; /* Hiệu ứng hover cho các liên kết */
+}
+
+.content-footer .col span {
+    font-weight: bold; /* Đặt các tiêu đề thành chữ đậm */
+}
+
+@media screen and (max-width: 1536px) {
+    .grid {
+        height: 100%; /* Hoặc min-height: 100vh; để chiếm đủ màn hình */
+    }
+
+    .col-span-7 {
+        height: 100%;
+    }
+
+    .slide-carousel,
+    .slide-item,
+    .slide-item__content,
+    .slide-left {
+        height: 100%;
+    }
+
+    .slide-item .slide-item__content .slide-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .search-container {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .search-container {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .search-container {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .search-container {
+        width: 150px;
+    }
+}
+
+.nav-pc {
+    display: block;
+}
+.nav-mobile {
+    display: none;
+}
+.mobile-menu {
+    background-color: white; /* Nền màu trắng cho menu */
+    padding: 10px; /* Padding cho menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu */
+}
+
+.hidden {
+    display: none; /* Ẩn phần tử */
+}
